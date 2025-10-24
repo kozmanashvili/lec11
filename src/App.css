@@ -1,0 +1,33 @@
+/* basic layout */
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, Helvetica, sans-serif; margin: 0; }
+.app { max-width: 960px; margin: 0 auto; padding: 16px; }
+main { margin-top: 16px; }
+
+/* navbar */
+.navbar { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid #ddd; }
+.nav-link { text-decoration: none; color: #444; padding: 6px 10px; border-radius: 8px; }
+.nav-link.active, .nav-link:hover { background: #eef; color: #223; }
+
+/* pages */
+.page h1 { margin: 12px 0 16px; }
+
+/* home */
+.home { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; }
+.avatar { width: 100px; height: 100px; background: #f5f5f5; border-radius: 50%; display: grid; place-items: center; font-size: 48px; }
+.contact { margin-top: 8px; display: grid; gap: 4px; }
+
+/* projects */
+.projects { list-style: none; padding: 0; display: grid; gap: 12px; }
+.project-card { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 12px; border: 1px solid #ddd; border-radius: 12px; }
+.project-thumb { width: 64px; height: 64px; background: #e8f0ff; border-radius: 8px; display: grid; place-items: center; font-size: 28px; }
+.project-body h3 { margin: 0 0 6px; }
+.links { display: flex; gap: 8px; }
+.links a { text-decoration: none; background: #eef; padding: 6px 10px; border-radius: 8px; }
+
+/* hobby */
+.hobby-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.hobby-card { border: 1px solid #ddd; border-radius: 12px; padding: 12px; display: grid; gap: 8px; }
+
+/* common */
+.btn { display: inline-block; text-decoration: none; background: #eef; color: #223; padding: 6px 10px; border-radius: 8px; border: 1px solid #ccd; }
